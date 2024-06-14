@@ -13,7 +13,7 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://frontend-movie-git-main-nguyn-phan-hoai-nams-projects.vercel.app/",
     credentials: true,
   })
 );
