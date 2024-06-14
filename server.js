@@ -13,7 +13,7 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: "https://frontend-movie-taupe.vercel.app",
+    origin: "https://frontend-movie-git-main-nguyn-phan-hoai-nams-projects.vercel.app",
     credentials: true,
   })
 );
