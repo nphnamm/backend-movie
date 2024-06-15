@@ -14,9 +14,9 @@
 - Session Management: JWT
 ## Installation and Running: 
 1. Clone Repository:
-   `sh
+   ```sh
    git clone https://github.com/nphnamm/backend-movie.git
-   `
+   
 
 3. Install dependencies:
    `sh
