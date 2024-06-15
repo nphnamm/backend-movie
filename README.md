@@ -18,8 +18,28 @@
    git clone https://github.com/nphnamm/backend-movie.git
    
 
-3. Install dependencies:
+2. Install dependencies:
    ```javascript
    npm install
-   `
+3. Environment configuration:
+   Create a .env file and fill in the necessary information (e.g., database connection, server port, etc.).
+   ```javascript
+   PORT = 5000
+   MONGO_URI =
+   JWT_SECRET =
+   NODE_ENV = 
+
+   to set up these environments, you will have to create storage project in Firebase.
+   # firebase credential 
+   FIREBASE_TYPE =
+   PROJECT_ID= 
+   PRIVATE_KEY_ID= 
+   PRIVATE_KEY=
+   CLIENT_EMAIL="firebase-adminsdk-6q44q@moviefullstack.iam.gserviceaccount.com"
+   CLIENT_ID="104633749347033414624"
+   CLIENT_X509_CERT_URL=
+   FIREBASE_STORAGE_BUCKET =
+4. Run Server
+   ```javascript
+   npm start 
 
