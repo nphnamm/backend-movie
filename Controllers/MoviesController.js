@@ -309,7 +309,7 @@ const createMovie = asyncHandler(async (req, res) => {
     });
     if (movie) {
       const createdMovie = await movie.save();
-      res.status(201).json(createMovie);
+      res.status(201).json(createdMovie);
     }
   } catch (error) {
     res.status(400).json({ message: error.message });

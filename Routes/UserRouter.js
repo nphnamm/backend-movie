@@ -34,7 +34,7 @@ router.delete("/favoritesMovie/:movieId",protect, deleteLikedMoviesById);
 
 // ********* ADMIN ROUTES ************
 
-router.get("/", protect, admin, getUsers);
+router.get("/", protect, admin, getUsers);  
 router.delete("/:id", protect, admin, deleteUser);
 
 export default router;
