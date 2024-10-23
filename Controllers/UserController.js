@@ -93,7 +93,7 @@ const updateUserProfile = asyncHandler(async (req, res) => {
       user.fullName = fullName || user.fullName;
       user.email = email || user.email;
       user.images = images || user.images;
-      user.isAdmin = isAdmin;
+      user.isAdmin = isAdmin || user.isAdmin;
       const updatedUser = await user.save();
 
       //send updated user data and token to client
@@ -125,7 +125,7 @@ const updateUserProfile = asyncHandler(async (req, res) => {
 const deleteUserProfile = asyncHandler(async (req, res) => {
   try {
     //find user in DB
-    const user = await User.findById(req.user._id);
+    const user = await User.findById(req.body.id);
 
     if (user) {
       // if user is admin throw error message
@@ -286,7 +286,7 @@ const deleteUser = asyncHandler(async (req, res) => {
 const addToLikedMovies = async (req, res) => {
   try {
     const { email, data } = req.body;
-    const user = await await User.findOne({ email });
+    const user =  await User.findOne({ email });
     if (user) {
       const { likedMovies } = user;
       const movieAlreadyLiked = likedMovies.find(({ id }) => id === data.id);
