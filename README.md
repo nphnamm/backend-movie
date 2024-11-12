@@ -35,8 +35,8 @@
    PROJECT_ID= 
    PRIVATE_KEY_ID= 
    PRIVATE_KEY=
-   CLIENT_EMAIL="firebase-adminsdk-6q44q@moviefullstack.iam.gserviceaccount.com"
-   CLIENT_ID="104633749347033414624"
+   CLIENT_EMAIL=
+   CLIENT_ID=
    CLIENT_X509_CERT_URL=
    FIREBASE_STORAGE_BUCKET =
 4. Run Server
